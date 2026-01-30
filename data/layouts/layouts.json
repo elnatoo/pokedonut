@@ -4410,6 +4410,26 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_COBALT_STATION",
+      "name": "CobaltStation_Layout",
+      "width": 80,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/CobaltStation/border.bin",
+      "blockdata_filepath": "data/layouts/CobaltStation/map.bin"
+    },
+    {
+      "id": "LAYOUT_COBALT_STATION_NATOOS_HOUSE",
+      "name": "CobaltStation_NatoosHouse_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/CobaltStation_NatoosHouse/border.bin",
+      "blockdata_filepath": "data/layouts/CobaltStation_NatoosHouse/map.bin"
     }
   ]
 }

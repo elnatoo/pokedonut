@@ -1,0 +1,53 @@
+{
+  "id": "MAP_COBALT_STATION_NATOOS_HOUSE",
+  "name": "CobaltStation_NatoosHouse",
+  "layout": "LAYOUT_COBALT_STATION_NATOOS_HOUSE",
+  "music": "MUS_CONTEST_LOBBY",
+  "region_map_section": "MAPSEC_COBALT_STATION",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_GYM",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_COBALT_STATION",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "CobaltStation_NatoosHouse_EventScript_CheckPC"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "CobaltStation_NatoosHouse_EventScript_Notebook"
+    },
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "CobaltStation_NatoosHouse_EventScript_GameConsole"
+    }
+  ]
+}

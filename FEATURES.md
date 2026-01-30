@@ -87,7 +87,8 @@ A lot of features listed below can be turned off as desired. Check which ones in
 ## Developer tools
 - ***Integrated Testing:*** Pinpoint if your custom mechanics have broken something else in the game or not.
 - ***Pokémon Sprite Visualizer:*** Test every Pokémon sprite and animation.
-- ***Overworld debug menu** ([original feature branch](https://github.com/TheXaman/pokeemerald/tree/tx_debug_system) by @TheXaman)*: Support menu with an assortment of features to facilitate debugging, including warping, flag and var toggling, Pokémon and item generation and more.
+- ***Overworld debug menu*** ([original feature branch](https://github.com/TheXaman/pokeemerald/tree/tx_debug_system) by @TheXaman) 
+  - *Support menu with an assortment of features to facilitate debugging, including warping, flag and var toggling, Pokémon and item generation and more.*
 - ***Battle Debug Menu:*** Modify data on the fly in the middle of a battle.
 - ***Learnset Helper:*** Autogenerate movesets from your custom TM and Tutor data based on official compatibility data.
 - ***Configurable script flags:*** Disabling Wild encounters, Disabling Trainer battles, Forcing/Disabling Shinies.

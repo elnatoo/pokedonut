@@ -1,0 +1,43 @@
+mapscripts CobaltStation_NatoosHouse_MapScripts {}
+
+script CobaltStation_NatoosHouse_EventScript_CheckPC {
+	lockall
+    setvar(VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE)
+    special(DoPCTurnOnEffect)
+    msgbox(gText_PlayerHouseBootPC, MSGBOX_DEFAULT)
+    special(BedroomPC)
+    waitstate
+    releaseall
+    end
+}
+
+script CobaltStation_NatoosHouse_EventScript_TurnOffPC {
+	lockall
+    setvar(VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE)
+    playse(SE_PC_OFF)
+    special(DoPCTurnOffEffect)
+    waitstate
+    releaseall
+    end
+}
+
+script CobaltStation_NatoosHouse_EventScript_Notebook {
+    msgbox(CobaltStation_NatoosHouse_Text_Notebook, MSGBOX_SIGN)
+    end
+}
+
+text CobaltStation_NatoosHouse_Text_Notebook {
+	format("(This is my journal. \n"
+    "It contains notes about Pokémon battling. \p"
+    "Best not to lose it!)")
+}
+
+script CobaltStation_NatoosHouse_EventScript_GameConsole {
+    msgbox(CobaltStation_NatoosHouse_Text_GameConsole, MSGBOX_SIGN)
+    end
+}
+
+text CobaltStation_NatoosHouse_Text_GameConsole {
+	format("(It's my old GameCube. \n"
+    "It's a bit old, but still functional!)")
+}

@@ -1,0 +1,45 @@
+mapscripts CobaltStation_MapScripts {}
+
+script CobaltStation_EventScript_TrainStationSign {
+    lockall
+    msgbox(CobaltStation_Text_TrainStationSign)
+    applymovement(OBJ_EVENT_ID_PLAYER, CobaltStation_Movement_TrainStationSign)
+    waitmovement(0)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_CAMERA, CobaltStation_Movement_CameraPanRight)
+    waitmovement(0)
+    special(RemoveCameraObject)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_CAMERA, CobaltStation_Movement_CameraPanLeft)
+    waitmovement(0)
+    special(RemoveCameraObject)
+    // TO-DO: Add train sound effect here
+    releaseall
+}
+
+text CobaltStation_Text_TrainStationSign {
+	format("Azure Train Station. \p"
+    "Beware of trains and what items they may drop!")
+}
+
+movement CobaltStation_Movement_TrainStationSign {
+	face_right
+}
+
+movement CobaltStation_Movement_CameraPanRight {
+    walk_right
+    walk_right
+    step_end
+}
+
+movement CobaltStation_Movement_CameraPanLeft {
+    walk_left
+    walk_left
+    step_end
+}
+
+script CobaltStation_EventScript_NatoosHouseSign {
+    lockall
+    msgbox("{PLAYER}'s House.")
+    releaseall
+}

@@ -1,6 +1,14 @@
 {
   "map_sections": [
     {
+      "id": "MAPSEC_COBALT_STATION",
+      "name": "COBALT STATION",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
       "id": "MAPSEC_LITTLEROOT_TOWN",
       "name": "LITTLEROOT TOWN",
       "x": 4,
