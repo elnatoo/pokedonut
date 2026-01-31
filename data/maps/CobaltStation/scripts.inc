@@ -19,42 +19,61 @@ CobaltStation_EventScript_TrainStationSign::
 	waitmovement 0
 # 11 "data/maps/CobaltStation/scripts.pory"
 	special RemoveCameraObject
+# 12 "data/maps/CobaltStation/scripts.pory"
+	delay 16
 # 13 "data/maps/CobaltStation/scripts.pory"
+	special SpawnCameraObject
+# 14 "data/maps/CobaltStation/scripts.pory"
+	applymovement LOCALID_CAMERA, CobaltStation_Movement_CameraPanLeft
+# 15 "data/maps/CobaltStation/scripts.pory"
+	waitmovement 0
+# 16 "data/maps/CobaltStation/scripts.pory"
+	special RemoveCameraObject
+# 18 "data/maps/CobaltStation/scripts.pory"
 	releaseall
 	return
 
 
-# 21 "data/maps/CobaltStation/scripts.pory"
+# 26 "data/maps/CobaltStation/scripts.pory"
 CobaltStation_Movement_TrainStationSign:
-# 22 "data/maps/CobaltStation/scripts.pory"
+# 27 "data/maps/CobaltStation/scripts.pory"
 	face_right
 	step_end
 
-# 25 "data/maps/CobaltStation/scripts.pory"
+# 30 "data/maps/CobaltStation/scripts.pory"
 CobaltStation_Movement_CameraPanRight:
-# 26 "data/maps/CobaltStation/scripts.pory"
+# 31 "data/maps/CobaltStation/scripts.pory"
 	walk_right
-# 27 "data/maps/CobaltStation/scripts.pory"
+# 32 "data/maps/CobaltStation/scripts.pory"
 	walk_right
-# 28 "data/maps/CobaltStation/scripts.pory"
+# 33 "data/maps/CobaltStation/scripts.pory"
+	step_end
+
+# 36 "data/maps/CobaltStation/scripts.pory"
+CobaltStation_Movement_CameraPanLeft:
+# 37 "data/maps/CobaltStation/scripts.pory"
+	walk_left
+# 38 "data/maps/CobaltStation/scripts.pory"
+	walk_left
+# 39 "data/maps/CobaltStation/scripts.pory"
 	step_end
 
 CobaltStation_EventScript_NatoosHouseSign::
-# 32 "data/maps/CobaltStation/scripts.pory"
+# 43 "data/maps/CobaltStation/scripts.pory"
 	lockall
-# 33 "data/maps/CobaltStation/scripts.pory"
+# 44 "data/maps/CobaltStation/scripts.pory"
 	msgbox CobaltStation_EventScript_NatoosHouseSign_Text_0
-# 34 "data/maps/CobaltStation/scripts.pory"
+# 45 "data/maps/CobaltStation/scripts.pory"
 	releaseall
 	return
 
 
 CobaltStation_EventScript_NatoosHouseSign_Text_0:
-# 33 "data/maps/CobaltStation/scripts.pory"
+# 44 "data/maps/CobaltStation/scripts.pory"
 	.string "{PLAYER}'s House.$"
 
 CobaltStation_Text_TrainStationSign::
-# 16 "data/maps/CobaltStation/scripts.pory"
+# 21 "data/maps/CobaltStation/scripts.pory"
 	.string "Azure Train Station.\p"
 	.string "Beware of trains and what items they\n"
 	.string "may drop!$"

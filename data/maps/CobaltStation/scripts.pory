@@ -9,11 +9,12 @@ script CobaltStation_EventScript_TrainStationSign {
     applymovement(LOCALID_CAMERA, CobaltStation_Movement_CameraPanRight)
     waitmovement(0)
     special(RemoveCameraObject)
+    delay(16)
     special(SpawnCameraObject)
     applymovement(LOCALID_CAMERA, CobaltStation_Movement_CameraPanLeft)
     waitmovement(0)
     special(RemoveCameraObject)
-    // TO-DO: Add train sound effect here
+    // TO-DO: Add train sound effect and animation here
     releaseall
 }
 
